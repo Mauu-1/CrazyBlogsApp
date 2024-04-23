@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/styles/main.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="container">
+    <div class="px-2 pt-5 my-5 mx-0 text-center ">
+        <h1 class="display-4 fw-bold text-body-emphasis">All Blogs are Crazy!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis diam et arcu ornare posuere quis vitae velit. Donec a commodo ipsum, eu egestas enim. Donec tincidunt aliquet lorem non imperdiet. Aenean sagittis massa vitae varius ullamcorper. Maecenas nisi dolor, tristique id sapien ut, vulputate elementum lacus. Vivamus purus eros, bibendum rutrum suscipit a, vehicula id nunc. Aenean suscipit eros id mi pharetra, nec lacinia risus porta.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button  type="button" class="btn  btn-lg px-4 me-sm-3 blogButton">View all Posts</button>
+            <button  type="button" class="btn  btn-lg px-4 createPost">Create new Post</button>
+          </div>
+        </div>
+        <div class="image-container mb-5 " style="max-height: 30vh;">
+          <div class="container px-5 border-bottom ">
+            <img src="https://picsum.photos/1000/500" class="img-fluid border rounded-3 shadow-lg mb-4" alt="random iamge" width="1000" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+     
+    </div>
+     <%- include("partials/footer.ejs") %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/header.ejs") %>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Edit your Post with id: <%= post.uniqueId %></h1>
+      <form action="/edition" class="form" method="POST"> 
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title for your Post</label>
+            <input value="<%= post.titleText %>" name="titleText" class="form-control" placeholder="Your post title">
+            <input type="hidden" name="uniqueId" value="<%= post.uniqueId %>">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Post content</label>
+            <textarea  name="postInfo" class="form-control"  rows="3"><%= post.postInfo %></textarea>
+          </div>
+          <button  type="submit" class="btn btn-success mb-2 form-submit creation">Confirm Edit</button>
+      </form>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

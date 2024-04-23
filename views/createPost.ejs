@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/header.ejs") %>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Create a new Post</h1>
+      <form action="/blog" class="form" method="POST"> 
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title for your Post</label>
+            <input value="" name="titleText" class="form-control" placeholder="Your post title">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Post content</label>
+            <textarea name="postInfo" class="form-control"  rows="3"></textarea>
+          </div>
+          <button  type="submit" class="btn btn-success mb-2 form-submit creation">Create Post</button>
+      </form>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
